@@ -14,11 +14,11 @@ export function HomePage() {
         {/* Atmospheric Background */}
         <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-primary/5" />
         <div className="absolute inset-0 opacity-[0.03] bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiMwMDAiIGZpbGwtb3BhY2l0eT0iMC41Ij48cGF0aCBkPSJNMzYgMzRoLTJ2LTRoMnYyaDR2MmgtdnptLTQtOGgydjJoLTJ2LTJ6bTAtOGgydjJoLTJ2LTJ6Ii8+PC9nPjwvZz48L3N2Zz4=')]" />
-        
+
         {/* Floating Elements */}
         <div className="absolute top-1/4 left-10 w-64 h-64 bg-primary/10 rounded-full blur-3xl animate-pulse" style={{ animationDuration: '4s' }} />
         <div className="absolute bottom-1/4 right-10 w-96 h-96 bg-accent/8 rounded-full blur-3xl animate-pulse" style={{ animationDuration: '6s' }} />
-        
+
         {/* Content */}
         <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
           <div className="animate-fade-in-up">
@@ -27,17 +27,17 @@ export function HomePage() {
               Premium Collection 2026
             </span>
           </div>
-          
+
           <h1 className="animate-fade-in-up animation-delay-100 text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6" style={{ fontFamily: 'Georgia, serif' }}>
-            <span className="text-foreground">Shop</span>
-            <span className="text-primary">Ease</span>
+            <span className="text-foreground">Knights</span>
+            <span className="text-primary"> Store</span>
           </h1>
-          
+
           <p className="animate-fade-in-up animation-delay-200 text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed">
-            Curated essentials for the modern lifestyle. 
+            Curated essentials for the modern lifestyle.
             Where quality meets convenience in perfect harmony.
           </p>
-          
+
           <div className="animate-fade-in-up animation-delay-300 flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link to="/products">
               <Button size="lg" className="h-14 px-8 text-base rounded-full hover:scale-105 transition-transform duration-300">
@@ -52,9 +52,9 @@ export function HomePage() {
             </Link>
           </div>
         </div>
-        
+
         {/* Scroll Indicator */}
-        <button 
+        <button
           onClick={scrollToContent}
           className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-muted-foreground hover:text-foreground transition-colors cursor-pointer"
         >
@@ -85,47 +85,47 @@ export function HomePage() {
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ fontFamily: 'Georgia, serif' }}>
-              Why Choose <span className="text-primary">ShopEase</span>
+              Why Choose <span className="text-primary">Knights Store</span>
             </h2>
             <p className="text-muted-foreground max-w-xl mx-auto">
               We believe in delivering an exceptional shopping experience through attention to detail and commitment to quality.
             </p>
           </div>
-          
+
           <div className="grid md:grid-cols-3 gap-6">
             {[
-              { 
-                icon: Truck, 
-                title: 'Express Delivery', 
+              {
+                icon: Truck,
+                title: 'Express Delivery',
                 desc: 'Free next-day delivery on orders over $50. Track your package in real-time.',
                 gradient: 'from-emerald-500/20 to-teal-500/10'
               },
-              { 
-                icon: Shield, 
-                title: 'Secure Payments', 
+              {
+                icon: Shield,
+                title: 'Secure Payments',
                 desc: 'Bank-level encryption protects every transaction. Your data stays safe with us.',
                 gradient: 'from-blue-500/20 to-indigo-500/10'
               },
-              { 
-                icon: RefreshCw, 
-                title: 'Easy Returns', 
+              {
+                icon: RefreshCw,
+                title: 'Easy Returns',
                 desc: '30-day hassle-free returns. Not satisfied? We make it right, no questions asked.',
                 gradient: 'from-amber-500/20 to-orange-500/10'
               },
             ].map((feature, i) => (
-              <div 
+              <div
                 key={i}
                 className="group relative p-8 rounded-2xl bg-card border border-border/50 overflow-hidden hover:border-primary/30 transition-all duration-500 hover:-translate-y-1"
                 style={{ animationDelay: `${i * 150}ms` }}
               >
                 {/* Gradient Overlay */}
                 <div className={`absolute inset-0 bg-gradient-to-br ${feature.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500`} />
-                
+
                 <div className="relative z-10">
                   <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary/20 group-hover:scale-110 transition-all duration-300">
                     <feature.icon className="text-primary" size={28} />
                   </div>
-                  
+
                   <h3 className="text-xl font-semibold mb-3 group-hover:text-primary transition-colors">
                     {feature.title}
                   </h3>
@@ -133,7 +133,7 @@ export function HomePage() {
                     {feature.desc}
                   </p>
                 </div>
-                
+
                 {/* Decorative Corner */}
                 <div className="absolute top-0 right-0 w-20 h-20 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                   <div className="absolute top-4 right-4 w-2 h-2 rounded-full bg-primary/40" />
@@ -161,7 +161,7 @@ export function HomePage() {
               <ArrowRight size={16} />
             </Link>
           </div>
-          
+
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {[
               { name: 'Electronics', color: 'bg-gradient-to-br from-slate-800 to-slate-900', count: '240+' },
@@ -194,21 +194,21 @@ export function HomePage() {
           <div className="relative p-12 md:p-16 rounded-3xl bg-gradient-to-br from-primary/20 via-primary/10 to-accent/10 border border-primary/20 overflow-hidden">
             {/* Background Pattern */}
             <div className="absolute inset-0 opacity-[0.03] bg-[radial-gradient(circle_at_2px_2px,currentColor_1px,transparent_0)] bg-[length:24px_24px]" />
-            
+
             <div className="relative z-10">
               <div className="flex items-center justify-center gap-2 mb-6">
                 {[1, 2, 3, 4, 5].map((star) => (
                   <Star key={star} size={20} className="text-amber-400 fill-amber-400" />
                 ))}
               </div>
-              
+
               <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ fontFamily: 'Georgia, serif' }}>
                 Ready to Experience Premium Shopping?
               </h2>
               <p className="text-muted-foreground mb-8 max-w-lg mx-auto">
-                Join thousands of satisfied customers who have discovered the joy of shopping with ShopEase.
+                Join thousands of satisfied customers who have discovered the joy of shopping with Knights Store.
               </p>
-              
+
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <Link to="/products">
                   <Button size="lg" className="h-12 px-8 rounded-full">

@@ -42,7 +42,7 @@ export function SignupPage() {
 
     try {
       await api.users.register({ email, name, password });
-      toast.success('Account created successfully! Welcome to ShopEase.');
+      toast.success('Account created successfully! Welcome to Knights Store.');
       navigate('/login');
     } catch (error: any) {
       toast.error(error.message || 'Registration failed. Please try again.');
@@ -66,7 +66,7 @@ export function SignupPage() {
               <Sparkles className="w-6 h-6 text-white" />
             </div>
             <CardTitle className="text-2xl font-bold text-white">Create Account</CardTitle>
-            <CardDescription className="text-zinc-400">Join ShopEase and start shopping today</CardDescription>
+            <CardDescription className="text-zinc-400">Join Knights Store and start shopping today</CardDescription>
           </CardHeader>
           <CardContent>
             <form onSubmit={handleSubmit} className="space-y-4">

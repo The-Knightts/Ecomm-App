@@ -20,7 +20,7 @@ export function Navbar() {
         <div className="max-w-4xl mx-auto px-4">
           <div className="flex items-center justify-between h-16">
             <Link to="/" className="text-xl font-bold text-primary">
-              ShopEase
+              Knights Store
             </Link>
             <div className="flex items-center gap-1 md:gap-4">
               {navItems.map(({ path, icon: Icon, label, badge }) => (
